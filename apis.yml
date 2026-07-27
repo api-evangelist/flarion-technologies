@@ -1,24 +1,77 @@
 aid: flarion-technologies
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flarion-technologies.png
 name: Flarion Technologies
-description: 'Flarion Technologies is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Flarion is a data-processing acceleration company that speeds up distributed data
+  engines without code changes or infrastructure migration. Its plug-and-play engine replaces
+  row-by-row JVM execution with a native, vectorized runtime built in Rust on Apache Arrow and
+  DataFusion, delivering roughly 3x performance and up to 60% cost savings. Flarion ships three
+  capabilities across Apache Spark, Hadoop, and Ray: a Data Processing Accelerator, Workload
+  Caching that eliminates redundant recomputation, and a Performance Monitoring platform with
+  anomaly detection and failure prevention. It integrates with managed services including
+  Databricks, AWS EMR, GCP Dataproc, and Azure HDInsight via simple Spark configuration
+  (dropping in a JAR), with usage-based pricing billed per accelerated CPU-hour. Flarion is a
+  portfolio company of Bessemer Venture Partners. As of this profile the company exposes a
+  product console and marketing/legal surface but no public developer API, OpenAPI, SDK, or
+  documentation portal.'
 url: https://raw.githubusercontent.com/api-evangelist/flarion-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - bessemer-venture-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-no-public-api
+x-sector: data-infrastructure
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Data Processing
+- Data Infrastructure
+- Data Engineering
+- Apache Spark
+- Hadoop
+- Distributed Computing
+- Big Data
+- Performance
 apis: []
+common:
+- type: DomainSecurity
+  url: security/flarion-technologies-domain-security.yml
+- type: Website
+  url: https://flarion.io
+- type: About
+  url: https://flarion.io/about-us
+- type: Blog
+  url: https://flarion.io/blog
+- type: Pricing
+  url: https://flarion.io/pricing
+- type: Support
+  url: https://flarion.io/contact-us
+- type: Login
+  url: https://console.flarion.io/
+- type: TermsOfService
+  url: https://flarion.io/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://flarion.io/legal/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
